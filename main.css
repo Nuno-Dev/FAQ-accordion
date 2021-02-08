@@ -1,0 +1,147 @@
+body {
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(0),
+      color-stop(#6565e7),
+      to(#af67e9)
+    )
+    no-repeat center center fixed;
+  background: linear-gradient(0, #6565e7, #af67e9) no-repeat center center fixed;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  background-color: white;
+  z-index: 2;
+  width: 920px;
+  height: 510px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.container .back_dskt {
+  -webkit-transform: translate(-60%, -31.5%);
+  transform: translate(-60%, -31.5%);
+}
+
+.container .text-container {
+  z-index: 20;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  top: 9%;
+  left: 52%;
+  color: black;
+  width: 355px;
+}
+
+.lady {
+  position: absolute;
+  top: 14%;
+  left: -9%;
+}
+
+.box {
+  position: absolute;
+  top: 55%;
+  left: 18vw;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+h1 {
+  padding-bottom: 21px;
+}
+
+.accordion-item-header {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion-item-header::after {
+  content: url('/images/icon-arrow-down.svg');
+  position: absolute;
+  font-size: 2rem;
+  right: 20px;
+  top: -10px;
+}
+
+.accordion-item-header.active::after {
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  top: -6px;
+}
+
+.accordion-item-header.active {
+  font-weight: bold;
+}
+
+.accordion-item-body {
+  display: none;
+}
+
+.accordion-item-body-content {
+  margin-top: 14px;
+  font-size: 14px;
+  font-size: 12px;
+  line-height: 18px;
+  color: grey;
+}
+
+hr {
+  margin-top: 17px;
+  margin-bottom: 17px;
+  opacity: 0.2;
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    margin-top: 20px;
+    width: 330px;
+    height: 525px;
+    overflow: visible;
+  }
+  .container .text-container {
+    width: 250px;
+    left: 35px;
+  }
+  .container .text-container h1 {
+    margin-bottom: 73px;
+    position: relative;
+    left: 100px;
+    top: 50px;
+  }
+  .container .text-container .accordion-item-header {
+    font-size: 13px;
+  }
+  .container .text-container .accordion-item-header::after {
+    right: -1.5rem;
+  }
+  .lady {
+    position: absolute;
+    top: -115px;
+    left: 40px;
+    width: 250px;
+  }
+  .box {
+    top: 135px;
+    left: 165px;
+    width: 100px;
+  }
+  .back_dskt {
+    display: none;
+  }
+}
+/*# sourceMappingURL=main.css.map */
