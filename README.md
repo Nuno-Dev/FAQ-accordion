@@ -1,2 +1,2 @@
 # FAQ-accordion
-Responsive FAQ accordion 
+Responsive FAQ accordion using SASS
