@@ -62,6 +62,9 @@ h1 {
   display: flex;
   position: relative;
   cursor: pointer;
+  &:hover {
+    color: hsl(14, 88%, 65%);
+  }
   &::after {
     content: url('/images/icon-arrow-down.svg');
     position: absolute;
@@ -75,6 +78,7 @@ h1 {
   }
   &.active {
     font-weight: bold;
+    color: black;
   }
 }
 
